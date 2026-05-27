@@ -1,0 +1,10 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',           // ← Necesario para Cloudflare Pages
+  images: {
+    unoptimized: true,        // ← Obligatorio en export static
+  },
+  // basePath: '/hoop-dashboard',   // descomenta solo si quieres subcarpeta
+};
+
+export default nextConfig;
